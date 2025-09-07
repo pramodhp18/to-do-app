@@ -93,12 +93,10 @@
       let li = document.createElement("li");
       li.textContent = taskText;
 
-      // Toggle done on click
       li.addEventListener("click", function() {
         li.classList.toggle("done");
       });
 
-      // Delete button
       let delBtn = document.createElement("span");
       delBtn.textContent = "X";
       delBtn.classList.add("delete");
@@ -109,9 +107,10 @@
       li.appendChild(delBtn);
       document.getElementById("taskList").appendChild(li);
 
-      taskInput.value = ""; // clear input
+      taskInput.value = "";
     }
   </script>
 </body>
 </html>
+
 
